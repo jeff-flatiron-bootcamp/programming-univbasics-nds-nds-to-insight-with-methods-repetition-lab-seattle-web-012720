@@ -26,6 +26,12 @@ end
 
 def list_of_directors(source)
   # Write this implementation
+  director_index = 0
+  result = []
+  while(source[director_index]) do
+    result.push(source[director_index][:name])
+  end
+  result
 end
 
 def total_gross(source)
