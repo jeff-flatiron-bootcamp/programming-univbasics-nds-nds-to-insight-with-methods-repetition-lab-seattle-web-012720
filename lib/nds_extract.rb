@@ -50,7 +50,8 @@ def total_gross(source)
   director_list_totals = directors_totals(source)
   total = 0
   while(director_list[director_index]) do
-    total = total + director_list_totals[]
+    total = total + director_list_totals[director_list[director_index]]
+    director_index+=0
   end
 end
 
